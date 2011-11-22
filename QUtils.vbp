@@ -1,0 +1,74 @@
+Type=OleDll
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\Windows\system32\stdole2.tlb#OLE Automation
+Reference=*\G{FF4BDFC0-C1F9-42F2-A0F8-6BADA08E8B98}#1.0#0#..\..\..\..\..\Program Files\vbAdvance\vbAdvance.tlb#vbAdvance Type Library
+Reference=*\G{420B2830-E718-11CF-893D-00A0C9054228}#1.0#0#..\..\..\..\..\Windows\system32\scrrun.dll#Microsoft Scripting Runtime
+Reference=*\G{B96BCBE1-F886-11D0-9C63-A06801C10627}#1.2#0#ISHF_Ex.tlb#IShellFolder Extended Type Library v1.2
+Module=nRepository; nRepository.bas
+Module=nTesting; nTesting.bas
+Module=nGlobals; nGlobals.bas
+Module=nCInterface; nCInterface.bas
+Module=mNR_CholeskyDecomposition; ..\QCommon\mNR_CholeskyDecomposition.bas
+Module=mBoiler_ProjectNameVB6; ..\VBVBACommon\mBoiler_ProjectNameVB6.bas
+Module=mWinAPI_Common; ..\VBVBACommon\mWinAPI_Common.bas
+Module=mWinAPI_HResult; ..\VBVBACommon\mWinAPI_HResult.bas
+Module=mWinAPI_Variant; ..\VBVBACommon\mWinAPI_Variant.bas
+Class=cDLL_DummyInit; ..\VB6Common\cDLL_DummyInit.cls
+Module=mDLL_Main; ..\VB6Common\mDLL_Main.bas
+Module=mDLL_RuntimeInit; ..\VB6Common\mDLL_RuntimeInit.bas
+Module=mDB_Common; ..\VBVBACommon\mDB_Common.bas
+Module=mDB_SafeArray; ..\VB6Common\mDB_SafeArray.bas
+Module=mNR_RandomNumbers; ..\QCommon\mNR_RandomNumbers.bas
+Module=mMath_Moments; ..\QCommon\mMath_Moments.bas
+Module=mNR_BrentMinimizer; ..\QCommon\mNR_BrentMinimizer.bas
+Module=mNR_BrentRootFinder; ..\QCommon\mNR_BrentRootFinder.bas
+Startup="(None)"
+HelpFile=""
+NoControlUpgrade=1
+Title="QUtils"
+ExeName32="QUtils.dll"
+Path32="..\..\..\..\bin"
+Command32=""
+Name="QUtils"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=0
+MinorVer=0
+RevisionVer=12
+AutoIncrementVer=1
+ServerSupportFiles=0
+VersionFileDescription="Utilities for XL"
+VersionLegalCopyright="Copyright (C) David Briant 2009-2011 - All rights reserved"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=1
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+ThreadingModel=1
+DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[vbAdvance]
+Exports=uNRCholeskySolve=uNRCholeskySolve=True;uNRCholeskyDecomposition=uNRCholeskyDecomposition=True;uNRBM_numberOfIterations=uNRBM_numberOfIterations=True;uNRBM_isWithinTolerance=uNRBM_isWithinTolerance=True;uNRBM_setMaxIterations=uNRBM_setMaxIterations=True;uNRBM_x=uNRBM_x=True;uNRBM_setFx=uNRBM_setFx=True;uNRBM_fx=uNRBM_fx=True;uNRBM_reEstimateX=uNRBM_reEstimateX=True;uNRBM_newToken=uNRBM_newToken=True;uNRBRF_isWithinTolerance=uNRBRF_isWithinTolerance=True;uNRBRF_setMaxIterations=uNRBRF_setMaxIterations=True;uNRBRF_x=uNRBRF_x=True;uNRBRF_setFx=uNRBRF_setFx=True;uNRBRF_reEstimateX=uNRBRF_reEstimateX=True;uNRBRF_newToken=uNRBRF_newToken=True;uDBMoments1D=uDBMoments1D=True;uDBNewGUID=uDBNewGUID=True;uNRLogNormalFromNormal=uNRLogNormalFromNormal=True;uNRGaussianRan1=uNRGaussianRan1=True;uNRRan1=uNRRan1=True;uNRRan0=uNRRan0=True;uDBReleaseRepository=uDBReleaseRepository=True;uDBRepository=uDBRepository=True;
+Exports1=uTRAReDimPreserve=uTRAReDimPreserve=True;uTRAGetSafeArrayPointer=uTRAGetSafeArrayPointer=True;uTRAGetSafeArrayDetails=uTRAGetSafeArrayDetails=True;uTRAMoments1D=uTRAMoments1D=True;uTRANewGUID=uTRANewGUID=True;uNRLogNormalFromNormal=uNRLogNormalFromNormal=True;uNRGaussianRan1_Alternate=uNRGaussianRan1_Alternate=True;uNRGaussianRan1=uNRGaussianRan1=True;uNRRan1_alternate=uNRRan1_alternate=True;uNRRan1=uNRRan1=True;uNRRan0=uNRRan0=True;uTRAReleaseRepository=uTRAReleaseRepository=True;uTRARepository=uTRARepository=True;
+IsConsole=0
+HasStubFile=0
+GenerateMap=0
+TSAware=0
+XPManifest=0
+ResBuildName=.\XLUtils.dll
+ReplaceIcon=0
+SendCommandArgs=0
+SymbDbgPref=0
+RevisionVersion=1
